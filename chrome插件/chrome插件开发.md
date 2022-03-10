@@ -6,7 +6,7 @@
 
 ##### 2、实现步骤
 
-  1. 新建一个自定义文件夹<img src="\chrome插件开发.assets\image-20220310100032425.png/>
+  1. 新建一个自定义文件夹 <img src=".\chrome插件开发.assets\image-20220310100032425.png />
 
      
 
