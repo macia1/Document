@@ -1,0 +1,13 @@
+{
+    "name": "Chrome Pop",          // 插件名称
+    "version": "1.0",               // 插件版本
+    "description": "pop",   // 插件描述
+    "manifest_version": 2,          // 清单版本，必须是2或者3
+    "content_scripts": [{
+        "matches": ["<all_urls>"],  // 匹配所有地址
+        "js": ["pop.js"],   // 注入的代码文件名和路径，如果有多个，则依次注入
+        "all_frames": true,         // 允许将内容脚本嵌入页面的所有框架中
+        "permissions": ["tabs"],    // 权限申请，tabs 表示标签
+        "run_at": "document_start"  // 代码注入的时间
+    }]
+}
