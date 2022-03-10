@@ -63,7 +63,7 @@
 
      
 
-  8. 打开新的chrome页面查看效果![image-20220310110349401](.\chrome插件开发.assets\image-20220310110349401.png)
+  8. 打开新的chrome页面查看效果<img src=".\chrome插件开发.assets\image-20220310110349401.png" style="zoom:80%;" />
 
 ##### 3、总结
 
