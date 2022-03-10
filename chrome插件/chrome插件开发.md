@@ -6,7 +6,7 @@
 
 ##### 2、实现步骤
 
-  1. 新建一个自定义文件夹![image-20220310100032425](\chrome插件开发.assets\image-20220310100032425.png)
+  1. 新建一个自定义文件夹<img src=".\chrome插件开发.assets\image-20220310100032425.png" alt="image-20220310100032425" style="zoom:100%;" />
 
      
 
@@ -14,7 +14,9 @@
 
   2. 在当前文件夹下面建立一个 `manifest.json` 文件(这个文件用于chrome识别自定义插件的基本信息)<img src=".\chrome插件开发.assets\image-20220310100321922.png" alt="image-20220310100321922" style="zoom:50%;" />
 
-  3. 打开 `manfest.json` 文件，在其中写入以下内容并保存
+     
+
+  3. 打开 `manifest.json` 文件，在其中写入以下内容并保存
 
      ```javascript
      {
@@ -31,10 +33,16 @@
          }]
      }
      ```
-     
-  4. 如上述内容所示，现在chrome会读取和加载 `pop.js` 中的脚本内容到页面![image-20220310101321735](.\chrome插件开发.assets\image-20220310101321735-1646880952253.png)
 
-  5. 现在我们在当前目录下新建一个为 `pop.js` 文件
+     
+
+  4. 如上述内容所示，现在chrome会读取和加载 `pop.js` 中的脚本内容到页面
+
+     
+
+  5. 现在我们在当前目录下新建一个为 `pop.js` 文件<img src="D:\Projects\Document\chrome插件\chrome插件开发.assets\image-20220310101321735.png" style="zoom:80%;" />
+
+     
 
   6. 编辑 `pop.js` 文件，写入我们自定义的脚本内容。eg: 此次我们让chrome打开每一个页面进行一次时间弹窗效果
 
@@ -49,9 +57,11 @@
      hook_tab.parentNode.removeChild(script);
      ```
 
-  7. 将我们的上面定义的`pop`文件夹直接拖入到打开的chrome的扩展页面中，开启开关，这个错误提示表示当前的版本号不建议使用，本次演示可以忽略
+     
 
-     ![image-20220310110134247](.\chrome插件开发.assets\image-20220310110134247.png)
+  7. 将我们的上面定义的`pop`文件夹直接拖入到打开的chrome的扩展页面中，开启开关，这个错误提示表示当前的版本号不建议使用，本次演示可以忽略<img src=".\chrome插件开发.assets\image-20220310110134247.png" style="zoom:80%;" />
+
+     
 
   8. 打开新的chrome页面查看效果![image-20220310110349401](.\chrome插件开发.assets\image-20220310110349401.png)
 
